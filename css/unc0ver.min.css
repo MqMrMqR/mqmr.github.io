@@ -313,7 +313,7 @@ h1 {
     background-position: center;
     min-width: 100%;
     min-height: 90vh;
-    background-image: url(../img/bg.png)
+    background-image: url(https://raw.githubusercontent.com/MqMrMqR/mqmr.github.io/main/img/bg.png);
 }
 
 #blurredMountain {
