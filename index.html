@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script>
+		  (adsbygoogle = window.adsbygoogle || []).push({
+		    google_ad_client: "ca-pub-3309372066084370",
+		    enable_page_level_ads: true
+		  }); //Adsense
+		</script>
+    <!-- mqmr and pwnd dont do anything here -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137158091-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-137158091-2');
+    </script>
+
+
+
+
+    <!-- anything above this, dont mess with it ! -->
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="unc0ver, The most advanced jail&#8203break tool.">
+    <title id="websiteTitle">unc0ver</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/unc0ver.min.css">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="apple-touch-icon" sizes="128x128" href="Icon.png">
+
+    <link href="splashscreens/iphone5_splash.png"
+        media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image" />
+    <link href="splashscreens/iphone6_splash.png"
+        media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image" />
+    <link href="splashscreens/iphoneplus_splash.png"
+        media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)"
+        rel="apple-touch-startup-image" />
+    <link href="splashscreens/iphonex_splash.png"
+        media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
+        rel="apple-touch-startup-image" />
+    <link href="splashscreens/iphonexr_splash.png"
+        media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image" />
+    <link href="splashscreens/iphonexsmax_splash.png"
+        media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)"
+        rel="apple-touch-startup-image" />
+    <link href="splashscreens/ipad_splash.png"
+        media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image" />
+    <link href="splashscreens/ipadpro1_splash.png"
+        media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image" />
+    <link href="splashscreens/ipadpro3_splash.png"
+        media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image" />
+    <link href="splashscreens/ipadpro2_splash.png"
+        media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image" />
+    <meta name="propeller" content="6f0c8619a760b0ae6be33bcf8d56cbeb">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div id="navbar">
+        <div id="navInner">
+            <span id="navbarName" onClick="goTo()">Mq</span>
+            <svg width="30" height="30" viewBox="0 0 48 48" onclick="toggleDarkMode()">
+                <style>
+                    path {
+                        fill: var(--text-color)
+                    }
+                </style>
+                <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+                3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+                13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"></path>
+            </svg>
+            <a href="https://www.instagram.com/_.wp1/">
+                <span class="right">MqMr</span>
+            </a>
+            <span class="right" onClick="goTo('creditsTitle')">Credits</span>
+            <span class="right" onClick="goTo('uncoverCenterTitle')">Main</span>
+        </div>
+    </div>
+
+    <!-- Background Mountains ( change it if you want, mqmr dont mess with it if you dont know ) -->
+    <div class="backgroundMountain"></div>
+    <div class="backgroundMountain" id="blurredMountain"></div>
+
+    <!-- Main Content -->
+    <div class="mainContent">
+
+        <!-- Center mqmr idiot Logo and Download -->
+        <h1 id="uncoverCenterTitle">MqMr</h1>
+        <h2>The best developer.</br>iOS Researcher</h2>
+        <div id="comingSoon" style="display:none">
+            <h2 id="comingSoonMsg">Coming soon to all devices on iOS 14.8</h2>
+            <div id="etaCounter">
+                <p>Estimated Arrival Time:</p>
+                <h1 id="timer"></h1>
+            </div>
+            <p id="currentProgress">Performing Final Stability Tests</p>
+            <div id="progress">
+                <div id="progressBar">
+                </div>
+            </div>
+        </div>
+        <div id="tweetIt" style="margin: 16px;color:var(--light-text-color);display:none">
+            <p style="margin-bottom: 8px">Tweet your iOS version with hashtag #unc0ver</p>
+            <a href="https://twitter.com/intent/tweet?button_hashtag=unc0ver" class="twitter-hashtag-button" data-show-count="false">Tweet #unc0ver</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div> 
+        <a id="latestDownloadURL">
+            <div onclick="goTo('ProjectsID')" id="latestButton" class="button expandOutElement">Projects</div>
+        </a>
+        <div id="altStoreSection" style="display:none">
+            <a id="altStoreLink">
+                <div onclick="goTo('ProjectsID')" class="button secondaryButton expandOutElement">Open in AltStore</div>
+            </a>
+            <span>Note: The latest version of AltStore must be installed to use this feature.</span>
+        </div>
+        <a id="alternativeDownloadURL">
+            <p id="altDownloadURL" style="display:none">Download</p>
+        </a>
+
+        <a id="installLinkURL">
+            <p id="installLink" style="display:none">Download</p>
+        </a>
+
+        <div id="payLinks">
+
+            <a href="https://discord.gg/PgPFYwQtMp">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                    <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
+                  </svg>
+            </a>
+
+            
+
+        </div>
+        <p style="color: rgb(170, 173, 177);">
+            Personal site for MqMr
+        </p>
+
+        <div id="legacyReleases">
+            <div class="releaseTableView">
+               <span class="releaseVersion">v4.3.1 Release</span><span class="releaseDate">3/8/2020</span>
+               <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v4.3.1/Undecimus-v4.3.1.ipa">
+                  <div class="button">Download</div>
+               </a>
+               <ul>
+                  <li>Bumped version to 4.3.1 due to a github bug causing an older file to be temporarily available</li>
+                  <li>Add support for rebooting the userspace for the first time in a jailbreak</li>
+                  <li>Add support for injecting to the entire userspace</li>
+                  <li>Add support for looking up or registering services from the sandbox with the cy: prefix for developers</li>
+                  <li>Reboot the userspace after jailbreaking</li>
+                  <li>Make major design changes to preserve stock system performance</li>
+                  <li>Fix random reboots, freezes, memory issues and any known problem that affected system services or apps</li>
+                  <li>Fix persistent software update blocker on iOS 13 (Works in the jailed state too)</li>
+                  <li>Fix a design problem that affected the Succession restore tool</li>
+                  <li>Automatically re-enable software updates when restoring RootFS</li>
+               </ul>
+               <div class="viewMoreButton" onclick="expandChangelog(this)">more</div>
+            </div>
+            <div class="releaseTableView">
+               <span class="releaseVersion">v4.2.1 Release</span><span class="releaseDate">2/26/2020</span>
+               <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v4.2.1/Undecimus-v4.2.1.ipa">
+                  <div class="button">Download</div>
+               </a>
+               <ul>
+                  <li>Fix a bug that caused unreliability in starting up substitute</li>
+                  <li>Fix an issue that broke battery settings and caused extra battery drain</li>
+               </ul>
+               <div class="viewMoreButton" onclick="expandChangelog(this)">more</div>
+            </div>
+            <div class="releaseTableView">
+               <span class="releaseVersion">v4.2.0 Release</span><span class="releaseDate">2/25/2020</span>
+               <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v4.2.0/Undecimus-v4.2.0.ipa">
+                  <div class="button">Download</div>
+               </a>
+               <ul>
+                  <li>
+                     <p>Fix issues with system services on A12-A13 (i.e. iMessage notifications)</p>
+                  </li>
+                  <li>
+                     <p>Add iOS 13.0-13.3 support for A8-A11 devices</p>
+                  </li>
+                  <li>
+                     <p>Fix temporary freeze after the jailbreak completed alert</p>
+                  </li>
+                  <li>
+                     <p>You must reboot in order to install this update if you are already jailbroken</p>
+                  </li>
+                  <li>
+                     <p>@Pwn20wnd's substitute bootstrap tooling is used on A8-A11 devices running iOS 13.0-13.3 for battery saving features, improved performance and compatibility reasons</p>
+                  </li>
+                  <li>
+                     <p>There is no particular reason to switch to the unc0ver jailbreak if you are already running the checkra1n jailbreak (Other than the convenience of being able to re-jailbreak your device without a computer)</p>
+                  </li>
+                  <li>
+                     <p>Your jailbreak apps and tweaks will be preserved when switching from the checkra1n jailbreak for A8-A11</p>
+                  </li>
+                  <li>
+                     <p>You can switch back to the checkra1n jailbreak while preserving your jailbreak apps and tweaks but you will need to manually install Cydia Substrate from Cydia after switching back</p>
+                  </li>
+                  <li>
+                     <p>All devices running iOS 13.0-13.3 are now supported</p>
+                  </li>
+                  <li>
+                     <p>The connected Apple Watch may re-sync after jailbreak. It will take around a minute or two and it won't touch your data</p>
+                  </li>
+               </ul>
+               <div class="viewMoreButton" onclick="expandChangelog(this)">more</div>
+            </div>
+            <div class="releaseTableView">
+               <span class="releaseVersion">v4.1.1 Release</span><span class="releaseDate">2/24/2020</span>
+               <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v4.1.1/Undecimus-v4.1.1.ipa">
+                  <div class="button">Download</div>
+               </a>
+               <ul>
+                  <li>Fix a stability bug in the time_waste exploit for iOS 13.0-13.3</li>
+               </ul>
+            </div>
+            <div class="releaseTableView">
+               <span class="releaseVersion">v4.1.0 Release</span><span class="releaseDate">2/24/2020</span>
+               <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v4.1.0/Undecimus-v4.1.0.ipa">
+                  <div class="button">Download</div>
+               </a>
+               <ul>
+                  <li>Replace the oob<em>timestamp exploit by <a href="https://twitter.com/bazad">@bazad</a> with the time</em>waste exploit by <a href="https://twitter.com/jakeashacks">@jakeashacks</a> for 99% stage 1 (exploit) reliability on iOS 13.0-13.3</li>
+                  <li>Fix compatibility issues with iOS 11.0-12.4 and 13.0-13.2.3</li>
+               </ul>
+               <div class="viewMoreButton" onclick="expandChangelog(this)">more</div>
+            </div>
+            <div class="releaseTableView">
+               <span class="releaseVersion">v4.0.3 Release</span><span class="releaseDate">2/19/2020</span>
+               <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v4.0.3/Undecimus-v4.0.3.ipa">
+                  <div class="button">Download</div>
+               </a>
+               <ul>
+                  <li>Fully fix App Store on A12-A13</li>
+                  <li>Fix a bug that affected system services on A12-A13</li>
+                  <li>Improve the exploit reliability by guiding the user on proper use</li>
+               </ul>
+               <div class="viewMoreButton" onclick="expandChangelog(this)">more</div>
+            </div>
+            <div class="releaseTableView">
+               <span class="releaseVersion">v4.0.2 Release</span><span class="releaseDate">2/17/2020</span>
+               <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v4.0.2/Undecimus-v4.0.2.ipa">
+                  <div class="button">Download</div>
+               </a>
+               <ul>
+                  <li>Fix iOS 13.0-13.2.3 support</li>
+                  <li>Fix injection into WebContent</li>
+               </ul>
+               <div class="viewMoreButton" onclick="expandChangelog(this)">more</div>
+            </div>
+            <div class="releaseTableView">
+               <span class="releaseVersion">v4.0.1 Release</span><span class="releaseDate">2/16/2020</span>
+               <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v4.0.1/Undecimus-v4.0.1.ipa">
+                  <div class="button">Download</div>
+               </a>
+               <ul>
+                  <li>Fix App Store for A12-A13</li>
+                  <li>Fix push notifications for A12-A13</li>
+                  <li>Improve reliability for A12-A13 devices on iOS 13.0-13.3</li>
+               </ul>
+               <div class="viewMoreButton" onclick="expandChangelog(this)">more</div>
+            </div>
+            <div class="releaseTableView">
+               <span class="releaseVersion">v4.0.0 Release</span><span class="releaseDate">2/15/2020</span>
+               <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v4.0.0/Undecimus-v4.0.0.ipa">
+                  <div class="button">Download</div>
+               </a>
+               <ul>
+                  <li>Full-fledged support for A12-A13 devices on iOS 13.0-13.3 with Cydia and system-wide tweak injection</li>
+               </ul>
+            </div>
+            <div class="releaseTableView">
+               <span class="releaseVersion">v3.8.0 Pre-Release</span><span class="releaseDate">12/9/2019</span>
+               <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v3.8.0%25b1/Undecimus-v3.8.0.b1.ipa">
+                  <div class="button">Download</div>
+               </a>
+               <ul>
+                  <li>Add iOS 12.4.1 support for A12 iPhones (iPads not supported at this time)</li>
+               </ul>
+            </div>
+            <div class="releaseTableView">
+               <span class="releaseVersion">v3.7.0 Pre-Release</span><span class="releaseDate">9/22/2019</span>
+               <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v3.7.0%25b4/Undecimus-v3.7.0.b1.ipa">
+                  <div class="button">Download</div>
+               </a>
+               <ul>
+                  <li>
+                     <p>Full-fledged A12-A12X support with Cydia and system-wide tweak injection</p>
+                  </li>
+                  <li>
+                     <p>Fix Camera on A12-A12X devices</p>
+                  </li>
+                  <li>
+                     <p>Fix GPS on A12-A12X devices</p>
+                  </li>
+                  <li>
+                     <p>Fix App Store purchases on A12-A12X devices</p>
+                  </li>
+                  <li>
+                     <p>Fix Face ID on A12-A12X devices</p>
+                  </li>
+                  <li>
+                     <p>Fix performance issues on A12-A12X devices</p>
+                  </li>
+                  <li>
+                     <p>Fix stability issues on A12-A12X devices</p>
+                  </li>
+                  <li>
+                     <p>Fix reload system daemons issues on A12-A12X devices</p>
+                  </li>
+                  <li>
+                     <p>Fix general stability issues with system services on A12-A12X devices</p>
+                  </li>
+                  <li>
+                     <p>Fix system shutdown on A12-A12X devices</p>
+                  </li>
+                  <li>
+                     <p>Fix system restart on A12-A12X devices</p>
+                  </li>
+                  <li>
+                     <p>Fix USB on A12-A12X devices</p>
+                  </li>
+                  <li>
+                     <p>Fix Xcode debugging on A12-A12X devices</p>
+                  </li>
+                  <li>
+                     <p>Fix a bug in libsubstitute that broke the TetherMe tweak A12-A12X devices</p>
+                  </li>
+                  <li>
+                     <p>Enable full-fledged AMFI/CoreTrust bypass on A12-A12X devices</p>
+                  </li>
+                  <li>
+                     <p>Fix memory management issues on A12-A12X devices</p>
+                  </li>
+                  <li>
+                     <p>Fix tweak injection to MobileSafari on A12-A12X devices</p>
+                  </li>
+                  <li>
+                     <p>Make reload system daemons reload services with launchctl instead of ldrestart</p>
+                  </li>
+                  <li>
+                     <p>Reload system daemons before restarting SpringBoard</p>
+                  </li>
+                  <li>
+                     <p>Correct a problem with reload system daemons when using Substrate (non-A12 devices)</p>
+                  </li>
+                  <li>
+                     <p>Update bundled Cydia to prompt for network access on China devices</p>
+                  </li>
+                  <li>
+                     <p>Rename the bundled mobilesubstrate to match other jailbreaks</p>
+                  </li>
+                  <li>
+                     <p>Update the bundled substitute to 0.1.0</p>
+                  </li>
+               </ul>
+               <div class="viewMoreButton" onclick="expandChangelog(this)">more</div>
+            </div>
+            <div class="releaseTableView">
+               <span class="releaseVersion">v3.6.3 Release</span><span class="releaseDate">9/9/2019</span>
+               <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v3.6.3/Undecimus-v3.6.3.ipa">
+                  <div class="button">Download</div>
+               </a>
+               <ul>
+                  <li>Fix an issue with finding kernel offsets on A8</li>
+               </ul>
+            </div>
+            <div class="releaseTableView">
+               <span class="releaseVersion">v3.6.2 Release</span><span class="releaseDate">9/9/2019</span>
+               <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v3.6.2/Undecimus-v3.6.2.ipa">
+                  <div class="button">Download</div>
+               </a>
+               <ul>
+                  <li>Fix an issue with the kernel virtual memory access APIs on A7-A8 devices that rendered the jailbreak useless by causing it to fail to copy big kernel data (Error known as: "Unable to copy container profile in kernel memory.")</li>
+               </ul>
+            </div>
+            <div class="releaseTableView">
+               <span class="releaseVersion">v3.6.0 Release</span><span class="releaseDate">9/8/2019</span>
+               <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v3.6.0/Undecimus-v3.6.0.ipa">
+                  <div class="button">Download</div>
+               </a>
+               <ul>
+                  <li>Completely redesign and rewrite all jailbreak patches from scratch</li>
+                  <li>Make the jailbreak patches static and not dynamic--Meaning that the system stability will be completely stock after the jailbreak</li>
+                  <li>Fix the app crashing on launch when signed with provisioning profiles with non-ASCII characters</li>
+                  <li>Internally prepare jailbreak patches for full-fledged A12-A12X support</li>
+                  <li>Make the jailbreak significantly and noticeably more reliable and faster to run</li>
+                  <li>Add the SockPort 3.0 exploit for improved reliability on iOS 12.4 and devices with low RAM</li>
+                  <li>Fix SSH support for arm64e devices running iOS12.0-12.1.2</li>
+                  <li>Make it possible to jailbreak with corrupted SystemVersion.plist on iOS 12.4</li>
+                  <li>Make the jailbreak perform proper clean up to preserve system stability in case of a failure</li>
+                  <li>Fix the jbctl command-line utility</li>
+                  <li>Switch to a new technique for setting the system boot nonce generator that works on all arm64e devices running iOS12.0-12.4 (Thanks to @0x7ff for the idea)</li>
+                  <li>Fix a bug with the initial Cydia installation getting stuck sometimes</li>
+                  <li>Significantly speed up the initial Cydia installation process</li>
+                  <li>Internally prepare upcoming stable substitute support</li>
+                  <li>Internally prepare Cydia and its resources for full-fledged arm64e support</li>
+               </ul>
+               <div class="viewMoreButton" onclick="expandChangelog(this)">more</div>
+            </div>
+            <div class="releaseTableView">
+               <span class="releaseVersion">v3.5.6 Release</span><span class="releaseDate">8/24/2019</span>
+               <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v3.5.6/Undecimus-v3.5.6.ipa">
+                  <div class="button">Download</div>
+               </a>
+               <ul>
+                  <li>Add support for remounting the RootFS as read-write on A12-A12X devices running iOS 12.1.3-12.4</li>
+                  <li>Adds support for restoring the RootFS on A12-A12X devices running iOS 12.1.3-12.4</li>
+               </ul>
+               <div class="viewMoreButton" onclick="expandChangelog(this)">more</div>
+            </div>
+            <div class="releaseTableView">
+               <span class="releaseVersion">v3.5.5 Release</span><span class="releaseDate">8/22/2019</span>
+               <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v3.5.5/Undecimus-v3.5.5.ipa">
+                  <div class="button">Download</div>
+               </a>
+               <ul>
+                  <li>Fixes issues with the jailbreak introduced with the last update</li>
+                  <li>Fixes iOS 11 support</li>
+               </ul>
+               <div class="viewMoreButton" onclick="expandChangelog(this)">more</div>
+            </div>
+            <div class="releaseTableView">
+               <span class="releaseVersion">v3.5.4 Release</span><span class="releaseDate">8/22/2019</span>
+               <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v3.5.5/Undecimus-v3.5.5.ipa">
+                  <div class="button">Download</div>
+               </a>
+               <ul>
+                  <li>Add full-fledged SSH support with root-shell for A12-A12X devices on iOS 12.1.3-12.4</li>
+                  <li>Add support for arbitrary unsigned code execution on A12-A12 devices on iOS 12.1.3-12.4 (Note: Object files will have to be signed with a CMS blob using the codesign utility)</li>
+                  <li>Add support for running expired or revoked apps on A12-A12X devices on iOS 12.1.3-12.4</li>
+                  <li>Fix instant or random reboots after jailbreaking with the SockPuppet3.0 exploit on A7-A12X devices on iOS 11.0-12.4</li>
+               </ul>
+               <div class="viewMoreButton" onclick="expandChangelog(this)">more</div>
+            </div>
+            <div class="releaseTableView">
+               <span class="releaseVersion">v3.5.2 Release</span><span class="releaseDate">8/19/2019</span>
+               <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v3.5.2/Undecimus-v3.5.2.ipa">
+                  <div class="button">Download</div>
+               </a>
+               <ul>
+                  <li>Fix the SockPuppet 3.0 exploit on iPad Mini 4 and iPad Air 2 </li>
+               </ul>
+            </div>
+            <div class="releaseTableView">
+               <span class="releaseVersion">v3.5.1 Release</span><span class="releaseDate">8/19/2019</span>
+               <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v3.5.1/Undecimus-v3.5.1.ipa">
+                  <div class="button">Download</div>
+               </a>
+               <ul>
+                  <li>Add the updated SockPuppet 3.0 exploit by @umanghere</li>
+                  <li>Remove the SockPort and SockPort2 exploits</li>
+                  <li>Update system-memory-reset fix to fix random reboots</li>
+                  <li>Add Apple to the credits section for development</li>
+                  <li>Fix error at stage 2 when jailbreaking after updating from a lower firmware while preserving the app data</li>
+                  <li>Fix the app crashing up on stared up on iOS 11</li>
+               </ul>
+               <div class="viewMoreButton" onclick="expandChangelog(this)">more</div>
+            </div>
+            <div class="releaseTableView">
+               <span class="releaseVersion">v3.5.0 Release</span><span class="releaseDate">8/18/2019</span>
+               <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v3.5.0/Undecimus-v3.5.0.ipa">
+                  <div class="button">Download</div>
+               </a>
+               <ul>
+                  <li>Add iOS 12.4 support to the Sock Puppet (A8-A11) and Sock Port (A7-A7X) exploits</li>
+               </ul>
+            </div>
+            <div class="releaseTableView">
+               <span class="releaseVersion">v3.4.2 Release</span><span class="releaseDate">7/25/2019</span>
+               <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v3.4.2/Undecimus-v3.4.2.ipa">
+                  <div class="button">Download</div>
+               </a>
+               <ul>
+                  <li>Fix the SockPuppet kernel exploit not displaying on A8-A8X devices</li>
+               </ul>
+            </div>
+            <div class="releaseTableView">
+               <span class="releaseVersion">v3.4.1 Release</span><span class="releaseDate">7/25/2019</span>
+               <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v3.4.1/Undecimus-v3.4.1.ipa">
+                  <div class="button">Download</div>
+               </a>
+               <ul>
+                  <li>Fix the sandbox swap error when using the exploits that are not SockPuppet</li>
+                  <li>Add the SockPort 1.5 exploit by @jakeajames for A7-A9X devices (Reliability: ~95% from extensive testing)</li>
+                  <li>Disable the SockPuppet exploit on A7-A7X due to reliability issues</li>
+                  <li>Add iOS 12.3~b1 support to the jailbreak (Verified working on iPhone 5s)</li>
+                  <li>Fix a theoretical reliability bug with SockPuppet</li>
+               </ul>
+               <div class="viewMoreButton" onclick="expandChangelog(this)">more</div>
+            </div>
+            <div class="releaseTableView">
+               <span class="releaseVersion">v3.4.0 Release</span><span class="releaseDate">7/23/2019</span>
+               <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v3.4.0/Undecimus-v3.4.0.ipa">
+                  <div class="button">Download</div>
+               </a>
+               <ul>
+                  <li>Replace the SockPort 2.0 exploit with the SockPuppet 2.0 exploit with better reliability and stability on older devices</li>
+               </ul>
+            </div>
+            <div class="releaseTableView">
+               <span class="releaseVersion">v3.3.8 Release</span><span class="releaseDate">7/22/2019</span>
+               <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v3.3.8/Undecimus-v3.3.8.ipa">
+                  <div class="button">Download</div>
+               </a>
+               <ul>
+                  <li>Use the rewritten SockPort 2.0 exploit with ~100% reliability, ~100 milliseconds run time and support for all devices on iOS 11.0-12.2 (12.1.3-12.2 on A12-A12X excluded)</li>
+                  <li>Fix the jailbreak on iOS 12.2 iPhones and iPods</li>
+               </ul>
+               <div class="viewMoreButton" onclick="expandChangelog(this)">more</div>
+            </div>
+            <div class="releaseTableView">
+               <span class="releaseVersion">v3.3.7 Release</span><span class="releaseDate">7/19/2019</span>
+               <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v3.3.7/Undecimus-v3.3.7.ipa">
+                  <div class="button">Download</div>
+               </a>
+               <ul>
+                  <li>Improve the reliability of the Sock Port kernel exploit on 4K devices</li>
+               </ul>
+            </div>
+            <div class="releaseTableView">
+               <span class="releaseVersion">v3.3.6 Release</span><span class="releaseDate">7/19/2019</span>
+               <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v3.3.6/Undecimus-v3.3.6.ipa">
+                  <div class="button">Download</div>
+               </a>
+               <ul>
+                  <li>Fix Sock Port failing on 4K devices</li>
+               </ul>
+            </div>
+            <div class="releaseTableView">
+               <span class="releaseVersion">v3.3.5 Release</span><span class="releaseDate">7/19/2019</span>
+               <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v3.3.5/Undecimus-v3.3.5.ipa">
+                  <div class="button">Download</div>
+               </a>
+               <ul>
+                  <li>Fix a reliability bug in Sock Port</li>
+                  <li>Fix Sock Puppet on A8X</li>
+               </ul>
+               <div class="viewMoreButton" onclick="expandChangelog(this)">more</div>
+            </div>
+         </div>
+
+
+        <!-- Long Description (Built from the ground up, mqmr you can edit it easily i think) -->
+        <div id="detailedInfo">
+            <div class="aboutJailbreak hidden">
+                <h1>About Me</h1>
+                <p>Im MqMr, Co-Owner on unc0verTeam,
+                    i wanna be hacker, but im a good developer.
+                </p>
+            </div>
+
+            <div class="betaIpsw hidden" style="display:none">
+                <h1>iOS 13.5.5 Beta</h1>
+                <p>Below you can find official download links for the beta IPSW. This is the latest signed iOS version compatible with unc0ver.
+                </br></br>Running beta iOS software is not recommended if not necessary.
+                </p>
+                <div id="ipswViewMore" class="expandable">
+                    <h2>IPSW Installation Guide</h2>
+                    <div class="pillSelector">
+                        <span onClick="changeIpswInstall(this)">Windows</span>
+                        <span onClick="changeIpswInstall(this)">MacOS</span>
+                        <div id="pillSelectorPill2"></div>
+                    </div>
+                    <div class="ipswInstallInfo" id="unityIpswGuide" style="display: block;">
+                        <h2>MacOS Catalina 10.15 and Newer</h2>
+                        <ol>
+                            <li>Select your device and download the IPSW file from the link above.</li>
+                            <li>Connect your device to your Mac.</li>
+                            <li>Open Finder and click on your device in the Finder Sidebar.</li>
+                            <li>While holding the &quotOption&quot key, click the &quotUpdate&quot button.</li>
+                            <li>Browse to where you downloaded the IPSW earlier and select it.</li>
+                            <li>Wait for Finder to update your device.</li>
+                        </ol>
+                        <h2>Older Versions</h2>
+                        <ol>
+                            <li>Select your device and download the IPSW file from the link above.</li>
+                            <li>Connect your device to your Mac.</li>
+                            <li>Click on your device in iTunes.</li>
+                            <li>While holding the &quotOption&quot key, click the &quotUpdate&quot button.</li>
+                            <li>Browse to where you downloaded the IPSW earlier and select it.</li>
+                            <li>Wait for iTunes to update your device.</li>
+                        </ol>
+                    </div>
+                    <div class="ipswInstallInfo" id="windowsIpswGuide" style="display: none;">
+                        <ol>
+                            <li>
+                                Install iTunes
+                                <ul>
+                                    <li><a href="https://www.apple.com/itunes/download/win64">64 Bit Download</a></li>
+                                    <li><a href="https://www.apple.com/itunes/download/win32">32 Bit Download</a></li>
+                                </ul>
+                            </li>
+                            <li>Select your device and download the IPSW file from the link above.</li>
+                            <li>Connect your device to your computer.</li>
+                            <li>Click on your device in iTunes.</li>
+                            <li>While holding the &quotShift&quot key, click the &quotUpdate&quot button.</li>
+                            <li>Browse to where you downloaded the IPSW earlier and select it.</li>
+                            <li>Wait for iTunes to update your device.</li>
+                        </ol>
+                    </div>
+                </div>
+                <select id="betaDeviceType" onchange="betaDeviceChange()">
+                    <option value="0">iPhone</option>
+                    <option value="1">iPad</option>
+                    <option value="2">iPod Touch</option>
+                    <option value="3">Apple TV</option>
+                </select>
+                <select id="betaDeviceModel">
+                </select>
+                <button onclick="betaDownload()">Download</button>
+                <div id="ipswMoreBtn" class="viewMoreGlobal expandBtn2" onClick="ipswMore()">Installation Guide</div>
+            </div>
+
+            <div class="aboutJailbreak hidden">
+                <h1 id="ProjectsID">My Projects</h1>
+                <div class="pillSelector">
+                    <span onClick="changeInstall(this)">unity</span>
+                    <span onClick="changeInstall(this)">Windows</span>
+                    <span onClick="changeInstall(this)">Linux</span>
+                    <span onClick="changeInstall(this)">iOS</span>
+                    <div id="pillSelectorPill"></div>
+                </div>
+                <div class="installInfo" id="unityGuide" style="display: block;">
+                    <h1>Shooter Game</h1>
+                    <ol>
+                        <li>Download it from the <a href="https://github.com/MqMrMqR/LAU">Launcher</a>.</li>
+                        <li>Sometimes windows defender will warning you, just ignore it</li>
+                        <li>The Style is Low Poly and High quality.</li>
+                        <li>Heads up: the busted devices gonna straight up freeze when you try to load a scene</li>
+
+                    </ol>
+                    
+                </div>
+                <div class="installInfo" id="iosGuide">
+                    <h1>unc0ver</h1>
+                    <ol>
+                        <li>The most advanced jail​break tool for iOS 11.0 - 14.8</li>
+                        <li>Use <a href="https://unc0ver.dev/">unc0ver web site</a> to download <a href="https://unc0ver.dev/">unc0ver</a>.</li>
+                        <li>Follow the <a href="https://twitter.com/pwn20wnd">owner</a> to get the last updates.</li>
+                        <li>Continue enjoying unc0ver!</li>
+                    </ol>
+                    <h1>Breaker</h1>
+                    <ol style=" color: white;">
+                        <p style="position: absolute;">The Project may canceled anytime</p>
+                    </ol>
+                    <br>
+                    <br>
+                    <ol style="color: grey;">
+                        <li>The best jail​break tool for iOS 16.0 - 16.6.1</li>
+                        <li>Use <a href="https://breaker.dev/">breaker web site</a> to download <a href="https://breaker.dev/">breaker</a>.</li>
+                        <li>Follow the <a href="https://twitter.com/unc0verTeam">owner</a> to get the last updates.</li>
+                    </ol>
+                    
+
+                </div>
+                <div class="installInfo" id="windowsGuide">
+                    <h1>Helper</h1>
+                    <ol>
+                        <li>Still dont published</li>
+                    </ol>
+                </div>
+                <div class="installInfo" id="linuxGuide">
+                    <h1>Deleter</h1>
+                    <ol>
+                        <li>Note: This made by: <a href="https://twitter.com/Pwn20wnd">Pwn20wnd</a> but still dont published. </li>
+                    </ol>
+                </div>
+            </div>
+
+            		 <!-- What is new -->
+        <div class="hidden">
+            <h1 id="changeLogTitle">What's New:</h1>
+            <div id="changelogText">
+                    <ul>
+                        <li>Uploaded 0.0.7v Overview for the Shooter Game</li>
+                        <li>Uploaded 4v Beta for Breaker</li>
+                     </ul>
+      
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+            <div class="featureWrapper hidden">
+                <svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" width=80 height=80 data-darkreader-inline-fill="" style="--darkreader-inline-fill: #000000;"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>search</title> <path d="M30.885 29.115l-10.103-10.103c1.538-1.911 2.468-4.368 2.468-7.042 0-6.229-5.050-11.279-11.279-11.279s-11.279 5.050-11.279 11.279c0 6.229 5.050 11.279 11.279 11.279 2.674 0 5.13-0.93 7.063-2.485l-0.022 0.017 10.103 10.103c0.226 0.226 0.539 0.366 0.884 0.366 0.691 0 1.251-0.56 1.251-1.251 0-0.345-0.14-0.658-0.366-0.884l0 0zM3.25 12c0-4.832 3.918-8.75 8.75-8.75s8.75 3.918 8.75 8.75c0 4.832-3.918 8.75-8.75 8.75v0c-4.83-0.005-8.745-3.92-8.75-8.749v-0.001z"></path> </g></svg>  
+                <h1>iOS Researcher</h1>
+                <p>
+                    Utilizing X-Code and iOS Manager to search PPL and Kernal
+                </p>
+            </div>
+            <div class="featureWrapper hidden">
+                <svg viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000" width=80 height=80 data-darkreader-inline-fill="" style="--darkreader-inline-fill: #000000;"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M919.113143 325.485714H104.813714v-67.803428h814.299429v-133.12a36.571429 36.571429 0 0 0-36.571429-36.571429H141.385143a36.571429 36.571429 0 0 0-36.571429 36.571429L103.862857 865.645714a36.425143 36.425143 0 0 0 36.571429 36.571429h673.865143a33.938286 33.938286 0 1 1 0 67.876571h-705.097143-0.146286a73.142857 73.142857 0 0 1-73.069714-73.142857L36.937143 93.184a73.142857 73.142857 0 0 1 73.142857-73.142857h803.693714a73.142857 73.142857 0 0 1 73.142857 73.142857v703.268571a33.938286 33.938286 0 0 1-67.803428 0V325.485714zM206.628571 215.844571a33.938286 33.938286 0 1 1 0-67.803428 33.938286 33.938286 0 0 1 0 67.803428z m203.556572 0a33.938286 33.938286 0 1 1 0-67.803428 33.938286 33.938286 0 0 1 0 67.803428z m-101.814857 0a33.938286 33.938286 0 1 1 0-67.803428 33.938286 33.938286 0 0 1 0 67.803428z m34.889143 250.148572c7.168-7.094857 26.112-7.094857 33.28 0 7.168 7.094857 7.168 29.476571 0 37.156571L265.874286 610.742857 373.76 712.923429c7.168 7.094857 8.118857 27.355429 0 35.328-9.801143 9.728-29.842286 8.192-36.571429 1.609142l-126.025142-125.805714a18.432 18.432 0 0 1 0-25.965714l132.096-132.096z m343.478857 0l132.096 132.096a18.432 18.432 0 0 1 0 26.038857l-126.098286 125.732571c-6.656 6.582857-25.6 10.752-36.571429 0-10.313143-10.24-7.094857-31.305143 0-38.4l108.397715-100.717714-111.908572-108.690286c-7.168-7.68-9.508571-26.624 0-36.059428 9.289143-9.142857 26.916571-7.094857 34.084572 0z m-135.68-26.331429c3.657143-9.508571 21.430857-15.506286 32.768-11.264 10.825143 4.022857 17.188571 19.017143 14.189714 28.525715l-119.808 329.947428c-3.657143 9.508571-20.699429 13.238857-30.281143 9.728-10.166857-3.584-21.211429-17.554286-17.554286-27.062857l120.685715-329.874286z" fill="#000000" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #000000;"></path></g></svg>  
+                                   <h1>Developer</h1>
+                <p>
+                    Utilizing unity and visual studio to develop games and web sites
+                </p>
+            </div>
+            <!-- <div class="featureWrapper hidden">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width=80 height=80>
+                    <g>
+                        <g>
+                            <path class="st1" d="M256,28.5c-129.6,0-235,105.4-235,235c0,96.7,60.6,184.7,150.8,219.1c3.8,1.5,8,1.3,11.6-0.5
+                                c3.6-1.8,6.4-5,7.6-8.8l44.1-140.7c2.1-6.7-0.8-13.9-6.9-17.2c-19.1-10.5-30.9-30.4-30.9-51.8c0-32.4,26.3-58.8,58.8-58.8
+                                s58.8,26.3,58.8,58.8c0,21.4-11.8,41.2-30.9,51.8c-6.1,3.4-9,10.6-6.9,17.2L321,473.2c1.2,3.9,4,7,7.6,8.8c2,1,4.2,1.5,6.4,1.5
+                                c1.8,0,3.6-0.3,5.2-1c90.2-34.3,150.8-122.4,150.8-219C491,133.9,385.6,28.5,256,28.5z M344.2,448.9l-35.9-114.6
+                                c22.4-16.6,35.8-42.9,35.8-70.9c0-48.6-39.5-88.1-88.1-88.1s-88.1,39.5-88.1,88.1c0,28.1,13.5,54.3,35.8,70.9l-35.9,114.6
+                                C97,415.5,50.4,342.8,50.4,263.5c0-113.4,92.2-205.6,205.6-205.6c113.4,0,205.6,92.2,205.6,205.6
+                                C461.6,342.8,415,415.5,344.2,448.9z"/>
+                        </g>
+                    </g>
+                </svg>
+                <h1>Open Source</h1>
+                <p>
+                    unc0ver is open source which gives you the ability to see how it's built and help to improve it.
+                </p>
+            </div> -->
+        
+
+        <!-- Credits -->
+        <div class="hidden">
+            <h1 id="creditsTitle">Credits:</h1>
+
+            <!-- who remove mqmr account?!
+
+            dont add my account
+
+            why?
+
+            man just dont add it and remove it from unc0ver.dev
+
+            okay
+            
+            -->
+
+            
+
+            <!--
+
+            <a href="https://twitter.com/unc0verTeam">
+                <div class="creditsCardWrapper">
+                    <img alt="ios_app_dev" src="img/twitter/unc0verTeam.jpg">
+                    <span class="devName">MqMr</span>
+                    <span class="devType">unc0verTeam</span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300"
+                        style="enable-background:new 0 0 300 300;" xml:space="preserve" class="devSocialIcon" width=20
+                        height=20>
+                        <path class="st0" d="M300,57c-11,4.9-22.9,8.2-35.3,9.7c12.7-7.6,22.5-19.7,27.1-34.1c-11.9,7.1-25.1,12.2-39.1,14.9
+                            c-11.2-12-27.2-19.4-44.9-19.4c-34,0-61.5,27.6-61.5,61.5c0,4.8,0.5,9.5,1.6,14c-51.2-2.6-96.5-27.1-126.9-64.3
+                            c-5.3,9.1-8.3,19.7-8.3,30.9c0,21.4,10.9,40.2,27.4,51.2c-10.1-0.3-19.6-3.1-27.9-7.7c0,0.3,0,0.5,0,0.8c0,29.8,21.2,54.7,49.4,60.4
+                            c-5.2,1.4-10.6,2.2-16.2,2.2c-4,0-7.8-0.4-11.6-1.1c7.8,24.5,30.6,42.2,57.5,42.7c-21.1,16.5-47.6,26.3-76.4,26.3
+                            c-5,0-9.9-0.3-14.7-0.9c27.2,17.5,59.6,27.7,94.3,27.7c113.2,0,175.1-93.8,175.1-175.1c0-2.7-0.1-5.3-0.2-8
+                            C281.3,80.1,291.7,69.3,300,57L300,57z" />
+                    </svg>
+                </div>
+            </a>
+
+            -->
+
+
+            <a href="https://twitter.com/pwn20wnd">
+                <div class="creditsCardWrapper">
+                    <img alt="pwn20wnd" src="img/twitter/pwn20wnd.jpg">
+                    <span class="devName">pwn20wnd</span>
+                    <span class="devType">Lead Developer</span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300"
+                        style="enable-background:new 0 0 300 300;" xml:space="preserve" class="devSocialIcon" width=20
+                        height=20>
+
+                        .st0{fill:var(--dev-social-color);}
+                        
+                        <path class="st0" d="M300,57c-11,4.9-22.9,8.2-35.3,9.7c12.7-7.6,22.5-19.7,27.1-34.1c-11.9,7.1-25.1,12.2-39.1,14.9
+                            c-11.2-12-27.2-19.4-44.9-19.4c-34,0-61.5,27.6-61.5,61.5c0,4.8,0.5,9.5,1.6,14c-51.2-2.6-96.5-27.1-126.9-64.3
+                            c-5.3,9.1-8.3,19.7-8.3,30.9c0,21.4,10.9,40.2,27.4,51.2c-10.1-0.3-19.6-3.1-27.9-7.7c0,0.3,0,0.5,0,0.8c0,29.8,21.2,54.7,49.4,60.4
+                            c-5.2,1.4-10.6,2.2-16.2,2.2c-4,0-7.8-0.4-11.6-1.1c7.8,24.5,30.6,42.2,57.5,42.7c-21.1,16.5-47.6,26.3-76.4,26.3
+                            c-5,0-9.9-0.3-14.7-0.9c27.2,17.5,59.6,27.7,94.3,27.7c113.2,0,175.1-93.8,175.1-175.1c0-2.7-0.1-5.3-0.2-8
+                            C281.3,80.1,291.7,69.3,300,57L300,57z" />
+                    </svg>
+                </div>
+            </a>
+
+            <a href="https://twitter.com/himynameisubik">
+                <div class="creditsCardWrapper">
+                    <img alt="himynameisubik" src="img/twitter/ubik.jpg">
+                    <span class="devName">Ubik</span>
+                    <span class="devType">Designer</span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300"
+                        style="enable-background:new 0 0 300 300;" xml:space="preserve" class="devSocialIcon" width=20
+                        height=20>
+                        <path class="st0" d="M300,57c-11,4.9-22.9,8.2-35.3,9.7c12.7-7.6,22.5-19.7,27.1-34.1c-11.9,7.1-25.1,12.2-39.1,14.9
+                            c-11.2-12-27.2-19.4-44.9-19.4c-34,0-61.5,27.6-61.5,61.5c0,4.8,0.5,9.5,1.6,14c-51.2-2.6-96.5-27.1-126.9-64.3
+                            c-5.3,9.1-8.3,19.7-8.3,30.9c0,21.4,10.9,40.2,27.4,51.2c-10.1-0.3-19.6-3.1-27.9-7.7c0,0.3,0,0.5,0,0.8c0,29.8,21.2,54.7,49.4,60.4
+                            c-5.2,1.4-10.6,2.2-16.2,2.2c-4,0-7.8-0.4-11.6-1.1c7.8,24.5,30.6,42.2,57.5,42.7c-21.1,16.5-47.6,26.3-76.4,26.3
+                            c-5,0-9.9-0.3-14.7-0.9c27.2,17.5,59.6,27.7,94.3,27.7c113.2,0,175.1-93.8,175.1-175.1c0-2.7-0.1-5.3-0.2-8
+                            C281.3,80.1,291.7,69.3,300,57L300,57z" />
+                    </svg>
+                </div>
+            </a>
+
+
+            <a href="https://twitter.com/ios_app_dev">
+                <div class="creditsCardWrapper">
+                    <img alt="ios_app_dev" src="img/twitter/exDev.jpg">
+                    <span class="devName">exDeveloper</span>
+                    <span class="devType">UI Dev</span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300"
+                        style="enable-background:new 0 0 300 300;" xml:space="preserve" class="devSocialIcon" width=20
+                        height=20>
+                        <path class="st0" d="M300,57c-11,4.9-22.9,8.2-35.3,9.7c12.7-7.6,22.5-19.7,27.1-34.1c-11.9,7.1-25.1,12.2-39.1,14.9
+                            c-11.2-12-27.2-19.4-44.9-19.4c-34,0-61.5,27.6-61.5,61.5c0,4.8,0.5,9.5,1.6,14c-51.2-2.6-96.5-27.1-126.9-64.3
+                            c-5.3,9.1-8.3,19.7-8.3,30.9c0,21.4,10.9,40.2,27.4,51.2c-10.1-0.3-19.6-3.1-27.9-7.7c0,0.3,0,0.5,0,0.8c0,29.8,21.2,54.7,49.4,60.4
+                            c-5.2,1.4-10.6,2.2-16.2,2.2c-4,0-7.8-0.4-11.6-1.1c7.8,24.5,30.6,42.2,57.5,42.7c-21.1,16.5-47.6,26.3-76.4,26.3
+                            c-5,0-9.9-0.3-14.7-0.9c27.2,17.5,59.6,27.7,94.3,27.7c113.2,0,175.1-93.8,175.1-175.1c0-2.7-0.1-5.3-0.2-8
+                            C281.3,80.1,291.7,69.3,300,57L300,57z" />
+                    </svg>
+                </div>
+            </a>
+
+
+
+
+        
+        </div>
+        <p style="color:var(--light-text-color);margin-top: 10px;opacity:.85">
+                Thanks to:</br>
+                <a href="https://twitter.com/TPinpal">PINPAL</a> for creating the site to MqMr</br>
+            </p>
+        <p id="footer" style="margin-top: 25px;color:var(--text-color)">
+            </br></br></br></br></br></br>
+
+            Site developed with
+            <img src="img/heart.svg" alt="heart" width=15px height=15px style="padding: 0px 5px">
+            by
+            <a href="https://twitter.com/TPinpal">PINPAL</a>
+
+            </br></br>
+
+        </p>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vef91dfe02fce4ee0ad053f6de4f175db1715022073587" integrity="sha512-sDIX0kl85v1Cl5tu4WGLZCpH/dV9OHbA4YlKCuCiMmOQIk4buzoYDZSFj+TvC71mOBLh8CDC/REgE0GX0xcbjA==" data-cf-beacon='{"rayId":"88761cdf7c559350","r":1,"version":"2024.4.1","token":"2ce0e64c818143b983fd99eb856cbdf5"}' crossorigin="anonymous"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/showdown"></script>
+<script src="js/unc0ver.min.js"></script>
+
+
+</html>
